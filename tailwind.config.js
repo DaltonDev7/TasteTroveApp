@@ -9,7 +9,8 @@ module.exports = {
         primary:'#E23E3E'
       },
       fontFamily:{
-        poppins: 'poppins'
+        poppins: 'poppins',
+        roboto : 'roboto'
       }
     },
   },
