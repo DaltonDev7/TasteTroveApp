@@ -3,4 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'assets/scss/fonts.scss'
+@import 'assets/scss/fonts.scss';
+
+body{
+    background-color: #E5E5E5 !important;
+}
