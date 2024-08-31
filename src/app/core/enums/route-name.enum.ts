@@ -1,5 +1,10 @@
 
 export enum RouteApp {
     home = 'home',
-    myProfile = 'my-profile'
+    recipe = 'recipe',
+    recipeDetail = 'recipe-detail',
+    findFriend = 'find-friend',
+    myProfile = 'my-profile',
+    signIn = 'signIn',
+    signUp = 'signUp'
 }

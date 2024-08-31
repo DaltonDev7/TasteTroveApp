@@ -2,25 +2,27 @@
 
 
     <div class="w-full max-w-[1390px]">
-        <div class="mt-20 m-auto max-w-[790px]">
-            <div class="items-center mb-6 flex flex-col">
+        <div class="mt-8 m-auto max-w-[790px] mb-12">
+            <div class="items-center mb-4 flex flex-col">
                 <img src="/assets/images/dalton2.png" class="rounded-full w-36 mb-2" alt="">
                 <p class="font-bold text-2xl font-poppins text-center mb-2">Dalton Tejada</p>
-                <button
-                    class="w-[390px] focus:outline-none text-white bg-primary focus:ring-4 font-medium rounded-lg text-base px-5 py-2.5 me-2 mb-2">
-                    Editar perfil
-                </button>
+
+                <div class="max-w-[390px] w-full">
+                    <button-action className="w-full" label="Editar perfil"> </button-action>
+                </div>
+
+                <!-- w-[390px] -->
             </div>
 
-            <div class="flex justify-center">
-                <div class="mr-8 text-center">
+            <div class="flex justify-center gap-6">
+                <div class="text-center">
                     <div class="text-gray-400 font-semibold font-poppins text-sm">
                         <span>Recetas</span>
                     </div>
                     <p class="text-xl font-poppins font-bold">2137</p>
                 </div>
 
-                <div class="mr-8 text-center">
+                <div class="text-center">
                     <div class="text-gray-400 font-semibold font-poppins text-sm">
                         <span>Seguidores</span>
                     </div>
@@ -36,79 +38,19 @@
             </div>
         </div>
 
-        <div class="flex mt-8">
-            <div class="mb-2 mr-4 shadow-md rounded-t-md  w-[358px]">
-                <div class="relative">
-                    <img src="/assets/images/comida.jpeg" class="w-full h-[268px] rounded-t-md " alt="">
-                    <div class="absolute left-3 bottom-3 font-poppins rounded-md p-2 bg-black/40 text-white backdrop-blur-md">
-                        <div class="flex">
-                            <i class="fa-solid fa-star text-lg mr-1 text-[#F4D35E]"></i>
-                            <p>3.5</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="py-2 px-4">
-                    <p class="text-base font-bold font-poppins">Arroz con pollo</p>
-                </div>
-                <div class="mt-1  pb-4 px-4 flex justify-between">
-                    <div class="flex items-center">
-                        <i class="fa-regular fa-heart text-xl mr-1 font-bold"></i>
-                        <p class="m-0">110</p>
-                    </div>
-
-                    <div class="flex items-center">
-                        <i class="fa-regular fa-message text-xl mr-1 font-bold"></i>
-                        <p class="m-0">24</p>
-                    </div>
-                    
-                    <div class="flex items-center">
-                        <i class="fa-regular fa-bookmark text-xl mr-1 font-bold"></i>
-                    </div>
-                </div>
-            </div>
 
 
-            <div class="mb-2 mr-4  rounded-t-md bg-white w-[358px]">
-                <div class="flex justify-between items-center py-2 px-4 ">
-                    <div class="flex items-center">
-                        <img src="/assets/images/dalton2.png" class="w-[40px] mr-2" alt="">
-                        <p class="text-base m-0 font-bold font-poppins">Dalton Tejada</p>
-                    </div>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-                <div class="relative">
-                    <img src="/assets/images/hamburguesa.jpg" height="350px" class="w-full h-[268px] " alt="">
-                    <div class="absolute left-3 bottom-3 font-poppins rounded-md p-2 bg-black/40 text-white backdrop-blur-md">
-                        <div class="flex">
-                            <i class="fa-solid fa-star text-lg mr-1 text-[#F4D35E]"></i>
-                            <p>3.5</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="py-2 px-4">
-                    <p class="text-base font-bold font-poppins">Arroz con pollo</p>
-                </div>
-                <div class="mt-1  pb-4 px-4 flex justify-between">
-                    <div class="flex items-center text-gray-500">
-                        <i class="fa-regular fa-heart text-xl mr-1 font-bold"></i>
-                        <p class="m-0">110</p>
-                    </div>
-
-                    <div class="flex items-center text-gray-500">
-                        <i class="fa-regular fa-message text-xl mr-1 font-bold"></i>
-                        <p class="m-0">24</p>
-                    </div>
-                    
-                    <div class="flex items-center text-gray-500">
-                        <i class="fa-regular fa-bookmark text-xl mr-1 font-bold"></i>
-                    </div>
-                </div>
-            </div>
-           
+        <div class="flex place-content-around gap-4 flex-wrap max-w-[920px] mx-auto mb-12">
+            <card-recipe> </card-recipe>
+            <card-recipe> </card-recipe>
+            <card-recipe> </card-recipe>
+            <card-recipe> </card-recipe>
+            <card-recipe> </card-recipe>
+            <card-recipe> </card-recipe>
         </div>
 
 
+
+
     </div>
-
-
 </div>
