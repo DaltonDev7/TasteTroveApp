@@ -5,6 +5,8 @@ export enum RouteApp {
     recipeDetail = 'recipe-detail',
     findFriend = 'find-friend',
     myProfile = 'my-profile',
+    editProfile = 'edit-profile',
     signIn = 'signIn',
-    signUp = 'signUp'
+    signUp = 'signUp',
+    selectProfile = 'select-profile'
 }

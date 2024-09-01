@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ButtonActionComponent } from '../../shared/components/button-action/button-action.component';
+import { ButtonActionComponent } from '../../../../shared/components/button-action/button-action.component';
 
 @Component({
   selector: 'app-recipe-detail',

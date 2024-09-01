@@ -1,8 +1,8 @@
 <div class="max-w-[780px] mx-auto flex items-center justify-center min-h-screen">
 
-    <div class="justify-center flex px-4">
+    <div class="justify-center flex px-4 mt-10">
         <div class="">
-            <div class="flex justify-center mb-4 font-poppins">
+            <div class="flex justify-center my-4 font-poppins">
                 <div>
                     <p class="text-3xl font-bold">Regístrate</p>
                     <!-- <p class="text-sm">Todos podemos mostrar el cheff que llevamos dentro</p> -->
@@ -13,22 +13,39 @@
                 <div class="">
                     <label for="" class="font-poppins font-semibold">Nombres</label>
                     <input type="text" placeholder="Introduce tu correo"
-                        class="w-full py-2 px-4 pr-10 rounded-md border border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent">
+                        class="w-full py-2 px-4 pr-10 rounded-md border  focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent">
                 </div>
 
                 <div class="">
                     <label for="" class="font-poppins font-semibold">Apellidos</label>
                     <input type="text" placeholder="Introduce tu correo"
-                        class="w-full py-2 px-4 pr-10 rounded-md border border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent">
+                        class="w-full py-2 px-4 pr-10 rounded-md border  focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent">
                 </div>
 
-                <label for="">aqui</label>
-                <ng-select [(ngModel)]="selectedCar" class="w-full py-2 px-4 pr-10 rounded-md border border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent">
-                    @for (car of cars; track car.id) {
-                        <ng-option [value]="car.id">{{car.name}}</ng-option>
-                    }
-                </ng-select>
+                <div>
+                    <label for="" class="font-poppins font-semibold">Foto</label>
+                    <div class="flex justify-center cursor-pointer">
+                        <img src="/assets/images/profile-default.svg" class="w-[120px]" alt="">
+                    </div>
+                </div>
+            
 
+                <div class="relative">
+                    <label for="" class="font-poppins font-semibold mb-1 block">Género</label>
+                    <div class="relative">
+                        <select class="pl-4 pr-8 py-2 w-full border rounded-md focus:outline-none text-gray-400 focus:ring-2 focus:ring-gray-400 appearance-none">
+                            <option value="" disabled selected class="text-gray-400">Selecciona una opción...</option>
+                            <option value="opcion1" class="text-black">Opción 1</option>
+                            <option value="opcion2" class="text-black">Opción 2</option>
+                            <option value="opcion3" class="text-black">Opción 3</option>
+                        </select>
+                        <!-- Icono de flecha hacia abajo -->
+                        <span class="absolute top-1/2 right-0 -translate-y-1/2 flex items-center pr-3 pointer-events-none">
+                            <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                        </span>
+                    </div>
+                </div>
+                
                 <div class="">
                     <label for="" class="font-poppins font-semibold">Correo</label>
                     <input type="text" placeholder="Introduce tu correo"
@@ -54,18 +71,20 @@
             </div>
 
             <div class="my-4 flex justify-center">
-                <div class="bg-google font-roboto text-white  rounded-lg cursor-pointer text-base flex items-center  justify-center w-full px-5 py-2.5">
+                <div
+                    class="bg-google font-roboto text-white  rounded-lg cursor-pointer text-base flex items-center  justify-center w-full px-5 py-2.5">
                     <i class="fa-brands fa-google text-xl mr-2"></i>
                     <p>Regístrate con Google</p>
                 </div>
-            </div>  
+            </div>
 
             <div class="my-4 flex justify-center">
-                <div class="bg-facebook font-roboto text-white  rounded-lg cursor-pointer text-base flex items-center  justify-center w-full px-5 py-2.5">
+                <div
+                    class="bg-facebook font-roboto text-white  rounded-lg cursor-pointer text-base flex items-center  justify-center w-full px-5 py-2.5">
                     <i class="fa-brands fa-facebook-f text-xl mr-2"></i>
                     <p>Regístrate con Facebook</p>
                 </div>
-            </div> 
+            </div>
 
 
             <div class="text-center text-base font-poppins mt-6">
